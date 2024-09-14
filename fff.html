@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website with Rounded Boxes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .box {
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            border-radius: 20px;
+            padding: 5px;
+            width: auto;
+            box-sizing: border-box;
+            gap: 10px;
+        }
+
+        .menu-box a {
+            color: white;
+            padding: 6px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            background-color: #444;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-box a:hover {
+            background-color: #555;
+        }
+
+        .menu-box a i {
+            margin-right: 5px;
+        }
+
+        .box-small {
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background-color: #ff6f61;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0 5px;
+        }
+
+        .box-small i {
+            color: white;
+            font-size: 20px;
+        }
+
+        .search-login-container {
+            display: flex;
+            gap: 0;
+        }
+
+        .search-login-container input[type="text"] {
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 150px;
+        }
+
+        .search-login-container a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            background-color: #ff6f61;
+            padding: 8px 10px;
+            border-radius: 5px;
+            margin-left: 0;
+        }
+
+        .box-content {
+            padding: 20px;
+        }
+
+        .box-medium {
+            flex: 2;
+            min-height: 300px;
+        }
+
+        .box-large {
+            flex: 3;
+            min-height: 300px;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery a {
+            flex: 1 1 23%;
+            box-sizing: border-box;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 300px; /* เพิ่มความสูงของรูปภาพ */
+            object-fit: cover; /* ปรับขนาดรูปให้เต็มพื้นที่โดยไม่ผิดเพี้ยน */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Website with Rounded Boxes</h1>
+</header>
+
+<div class="container">
+    <!-- กล่องที่ 1 -->
+    <div class="box">
+        <!-- กล่องรูปหัวใจทางซ้าย -->
+        <div class="box-small">
+            <i class="fas fa-heart"></i>
+        </div>
+
+        <!-- เมนูหลัก -->
+        <div class="menu-box">
+            <a href="#chocolate"><i class="fas fa-candy-cane"></i> Chocolate</a>
+            <a href="#cakes"><i class="fas fa-cake-candles"></i> Cakes</a>
+            <a href="#cookies"><i class="fas fa-cookie"></i> Cookies</a>
+            <a href="#icecream"><i class="fas fa-ice-cream"></i> Ice Cream</a>
+        </div>
+
+        <!-- กล่องสำหรับ Search และ Login ทางขวา -->
+        <div class="search-login-container">
+            <input type="text" placeholder="Search">
+            <a href="#login">Login</a>
+        </div>
+    </div>
+
+    <!-- กล่องที่ 2 -->
+    <div class="box box-medium">
+        <div class="box-content">
+            <h2>กล่องที่ 2</h2>
+            <p>เนื้อหาในกล่องที่ 2</p>
+        </div>
+    </div>
+
+    <!-- กล่องที่ 3 -->
+    <div class="box box-large">
+        <div class="box-content">
+            <h2>Gallery</h2>
+            <div class="image-gallery">
+                <a href="https://i.pinimg.com/736x/76/e2/1e/76e21eed4e11dd7936d3381c8ad24cd5.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/76/e2/1e/76e21eed4e11dd7936d3381c8ad24cd5.jpg" alt="Image 1">
+                </a>
+                <a href="https://i.pinimg.com/736x/9d/25/93/9d2593780fe22eba7acf1ea6e9e57110.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/9d/25/93/9d2593780fe22eba7acf1ea6e9e57110.jpg" alt="Image 2">
+                </a>
+                <a href="https://i.pinimg.com/736x/41/34/3d/41343d059fa0c35b4586138e9b6f21b9.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/41/34/3d/41343d059fa0c35b4586138e9b6f21b9.jpg" alt="Image 3">
+                </a>
+                <a href="https://i.pinimg.com/736x/3c/51/b6/3c51b6cbe2dd56cca60033c616d54b83.jpg" target="_blank">
+                    <img src="https://i.pinimg.com/736x/3c/51/b6/3c51b6cbe2dd56cca60033c616d54b83.jpg" alt="Image 4">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
