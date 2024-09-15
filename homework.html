@@ -10,18 +10,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #FFDBB5;
         }
 
         header {
-            background-color: #333;
-            padding: 10px 0;
+            background-color: #603F26;
+            padding: 10px;
             text-align: center;
-        }
-
-        header h1 {
-            color: #fff;
-            margin: 0;
+            color: #fffcf8;
         }
 
         .container {
@@ -36,100 +32,130 @@
         .box {
             border: 1px solid #ddd;
             border-radius: 20px;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .menu-box {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #333;
+            gap: 10px;
+            background-color: #6C4E31;
             border-radius: 20px;
             padding: 5px;
-            width: auto;
-            box-sizing: border-box;
-            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .menu-box a {
-            color: white;
+            color: #fff;
             padding: 6px 15px;
             text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 14px;
-            background-color: #444;
+            background-color: #6C4E31;
             border-radius: 5px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 5px;
         }
 
         .menu-box a:hover {
-            background-color: #555;
+            background-color: #6C4E31;
         }
 
-        .menu-box a i {
-            margin-right: 5px;
-        }
-
-        .box-small {
-            border: 1px solid #ddd;
+        .box-small, .download-icon {
             border-radius: 50%;
-            background-color: #ff6f61;
-            width: 40px;
-            height: 40px;
+            background-color: #B99470;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 0 5px;
         }
 
-        .box-small i {
-            color: white;
+        .box-small {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .download-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #B99470;
             font-size: 20px;
         }
 
         .search-login-container {
             display: flex;
-            gap: 0;
+            gap: 10px;
         }
 
         .search-login-container input[type="text"] {
             border: none;
-            padding: 5px;
+            padding: 10px; /* ปรับเพิ่มความกว้างของช่องค้นหา */
             border-radius: 5px;
-            box-sizing: border-box;
-            width: 150px;
+            width: 200px; /* ปรับเพิ่มความกว้างของช่องค้นหา */
         }
 
         .search-login-container a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
+            color: #fff;
             text-decoration: none;
-            font-size: 14px;
-            background-color: #ff6f61;
+            background-color: #B99470;
             padding: 8px 10px;
             border-radius: 5px;
-            margin-left: 0;
         }
 
         .box-content {
             padding: 20px;
         }
 
+        .choco-charm-title {
+            font-size: 70px;
+            color: #603F26;
+            text-align: center;
+        }
+
+        .circle-box {
+            width: 50px;
+            height: 50px;
+            background-color: #B99470;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .right-container {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+
+        .right-box {
+            background-color: #B99470;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .box-medium {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             flex: 2;
             min-height: 300px;
+            margin-top: 20px;
         }
 
         .box-large {
@@ -145,33 +171,105 @@
 
         .image-gallery a {
             flex: 1 1 23%;
-            box-sizing: border-box;
         }
 
         .image-gallery img {
             width: 100%;
-            height: 300px; /* เพิ่มความสูงของรูปภาพ */
-            object-fit: cover; /* ปรับขนาดรูปให้เต็มพื้นที่โดยไม่ผิดเพี้ยน */
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #603F26;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
-            display: none;
         }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #B99470;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .review-section {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-section h2 {
+            margin-top: 0;
+        }
+
+        .review-form textarea {
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .review-form button {
+            background-color: #B99470;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .contact-form button {
+            background-color: #B99470;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
 
 <header>
-    <h1>My Website with Rounded Boxes</h1>
+    <h1>chocolate</h1>
 </header>
 
 <div class="container">
@@ -199,9 +297,25 @@
 
     <!-- กล่องที่ 2 -->
     <div class="box box-medium">
+        <!-- กล่องข้อความวงกลม -->
+        <div class="circle-box">=</div>
+
+        <!-- ข้อความ Choco Charm -->
         <div class="box-content">
-            <h2>กล่องที่ 2</h2>
-            <p>เนื้อหาในกล่องที่ 2</p>
+            <h2 class="choco-charm-title">Choco Charm</h2>
+        </div>
+
+        <!-- เพิ่มกล่องสำหรับรูปภาพ -->
+        <div class="box-content">
+            <img src="https://i.pinimg.com/564x/08/db/84/08db845f69ca697e28419abdc326b718.jpg" alt="Choco Charm Image" style="width: 200px; height: 100px; border-radius: 10px;">
+        </div>
+
+        <!-- เพิ่มกล่องข้อความ Menu และไอคอนดาวน์โหลด -->
+        <div class="right-container">
+            <div class="right-box">Menu</div>
+            <div class="download-icon">
+                <i class="fas fa-download"></i>
+            </div>
         </div>
     </div>
 
@@ -225,11 +339,35 @@
             </div>
         </div>
     </div>
+
+    <!-- ส่วนรีวิว -->
+    <div class="review-section">
+        <h2>Reviews</h2>
+        <form class="review-form">
+            <textarea placeholder="Leave a review..."></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <!-- ฟอร์มติดต่อเรา -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 My Website. All rights reserved.</p>
+    <p>&copy; 2024 ร้านขนมหวาน. All rights reserved.</p>
 </footer>
+
+<div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+</div>
 
 </body>
 </html>
